@@ -1,0 +1,43 @@
+// styles.scss
+
+// Change menu text color from white to yellow
+$nav-text-color: yellow; // Declare variable for menu text color
+$nav-menutext-color: #ddd6d6; // Declare variable for menu text color
+.nav {
+    ul {
+        li {
+            a {
+                color:$nav-text-color; // Change text color to yellow
+            }
+        }
+    }
+}
+
+// Change menu text hover color from yellow to white
+.nav {
+    ul {
+        li {
+            a {
+                &:hover {
+                    color: $nav-menutext-color; // Change hover color to white
+                }
+            }
+        }
+    }
+}
+
+// Change all button background colors to red
+button {
+    background-color: red; // Change background color to red for all buttons
+}
+
+// Apply dashed border to the Contact Us Form
+.contact-form {
+    border: 1px dashed black; // Apply dashed border
+}
+
+// Add "after" effect to all buttons and make them capital
+button::after {
+    content: attr(data-text); // Use data-text attribute for button text
+    text-transform: uppercase; // Make text uppercase
+}
